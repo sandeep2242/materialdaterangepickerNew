@@ -318,7 +318,8 @@ public class DatePickerDialog extends DialogFragment implements
 
         tabHost = (TabHost) view.findViewById(R.id.tabHost);
         tabHost.findViewById(R.id.tabHost);
-        tabHost.setup();
+		tabHost.setVisibility(View.GONE);
+		tabHost.setup();
 
         final Activity activity = getActivity();
 
